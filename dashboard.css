@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-y: hidden;
+}
+
+header{
+    background-color: #c8e6c9;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
+header img{
+    width: 15%;
+
+}
+header .content{
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+header .content p{
+    margin-right: 8px;
+    font-size: 12px;
+    font-weight: bold;
+}
+section{
+    margin-top: 42px;
+    display: flex;
+    width: 100%;
+}
+section .menu{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: #c8e6c9;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+.menu a{
+    text-decoration: none;
+    background-color: black;
+    width: 70%;
+    text-align: center;
+    margin: 4px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.get-Data{
+    width: 80%;
+    height: 92.5vh;
+    overflow-y: auto;
+    margin: 10px;
+    
+}
+.formContent{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+.formContent h4{
+    text-align: center;
+    padding: 10px 0px;
+    background-color: #c8e6c9;
+    border-radius: 10px;
+    width: 100%;
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+}
+form label{
+    width: 50%;
+    margin-right: 10px;
+}
+.sel{
+    margin-top: 10px;
+}
+form input{
+    width: 40%;
+    margin-bottom: 10px;
+
+}
+form select{
+    width: 40%;
+    margin-top: 10px;
+}
+form button{
+    border: none;
+    padding: 10px 40px;
+    margin-top: 10px;
+    background-color: #c8e6c9;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+#modifie,#delete{
+    cursor: pointer;
+}
+@media (max-width: 1015px) {
+    header img{
+        width: 20%;
+    }
+}
+@media (max-width: 768px) {
+    header img{
+        width: 30%;
+    }
+    section .menu{
+        width: 30%;
+    }
+    .get-Data{
+        width: 70%;
+    }
+}
+@media (max-width: 414px) {
+    header img{
+        width: 40%;
+    }
+}
